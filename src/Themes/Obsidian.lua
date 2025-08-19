@@ -1,6 +1,6 @@
 return {
 	Name = "Obsidian",
-	Accent = Color3.fromRGB(212, 175, 55), -- Gold accent
+	Accent = Color3.fromRGB(255, 225, 150), -- Gold accent
 
 	AcrylicMain = Color3.fromRGB(10, 10, 10), -- Darker, more solid obsidian base
 	AcrylicBorder = Color3.fromRGB(70, 60, 40),
