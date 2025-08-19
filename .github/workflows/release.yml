@@ -54,6 +54,13 @@ jobs:
     - name: Bundle Luau
       run: pnpm run bundle
 
+    - name: List files after bundle
+      run: |
+        echo "Listing dist folder:"
+        ls -R dist || echo "dist folder does not exist"
+        echo "Listing root folder:"
+        ls -R
+
     # Upload Release Assets
     - name: Upload Release Assets
       uses: alexellis/upload-assets@0.4.0
