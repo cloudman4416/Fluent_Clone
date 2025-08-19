@@ -9,7 +9,7 @@ local Themes = {
 		"Crimson",
 		"Emerald",
 		"Obsidian",
-		"Sapphire"
+		"Sapphire",
 	},
 }
 
