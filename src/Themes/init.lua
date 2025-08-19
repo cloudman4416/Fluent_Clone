@@ -10,6 +10,8 @@ local Themes = {
 		"Emerald",
 		"Obsidian",
 		"Sapphire",
+		"New_Obsidian",
+		"Obsidian_Silver",
 	},
 }
 
