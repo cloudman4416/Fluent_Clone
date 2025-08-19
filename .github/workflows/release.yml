@@ -29,9 +29,11 @@ jobs:
       uses: pnpm/action-setup@v2
       with:
         version: 7
-        run_install: true
-        install_args: --no-frozen-lockfile
-
+        run_install: false   # don't run install automatically
+    
+    - name: Install dependencies
+      run: pnpm install --no-frozen-lockfile
+      
     # Debug PNPM installation
     - name: Check PNPM
       run: pnpm --version
