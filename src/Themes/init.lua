@@ -2,6 +2,7 @@ local Themes = {
 	Names = {
 		"Gold",
 		"Silver",
+		"Obsidian",
 		"Dark",
 		"Darker",
 		"Light",
