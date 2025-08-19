@@ -1,5 +1,5 @@
 return {
-	Name = "Obsidian_Silver",
+	Name = "Silver",
 	Accent = Color3.fromRGB(200, 200, 200), -- Clean silver accent
 
 	AcrylicMain = Color3.fromRGB(15, 15, 15), -- Dark obsidian base
