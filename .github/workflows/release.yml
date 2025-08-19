@@ -30,6 +30,7 @@ jobs:
       with:
         version: 7
         run_install: true
+        install_args: --no-frozen-lockfile
 
     # Debug PNPM installation
     - name: Check PNPM
