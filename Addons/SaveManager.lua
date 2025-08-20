@@ -266,8 +266,8 @@ local SaveManager = {} do
 						end
                     }
                 }
-            })
-		end)
+			end
+        })
 
         section:AddButton({Title = "Load config", Callback = function()
 			local name = SaveManager.Options.SaveManager_ConfigList.Value
