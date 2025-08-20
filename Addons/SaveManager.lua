@@ -254,7 +254,7 @@ local SaveManager = {} do
 				Content = "You'r about to delete this config",
 				Buttons = {
 					{
-						Title = "Are You Really Sure ?",
+						Title = "Are You Sure ?",
 						Callback = function()
 							delfile(config)
 							SaveManager.Options.SaveManager_ConfigList:SetValue(nil)
