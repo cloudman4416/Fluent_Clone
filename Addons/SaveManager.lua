@@ -247,27 +247,29 @@ local SaveManager = {} do
 
 		section:AddButton({Title = "Delete Config", Callback = function()
 			local name = SaveManager.Options.SaveManager_ConfigList.Value
-			local config = self.Folder .. "/options/" .. name .. ".json"
-			if not isfile(config) then return end
-    		self.Library.Window:Dialog({
-                Title = "Delete Config",
-                Content = "You'r about to delete this config",
-                Buttons = {
-                    {
-                        Title = "Are You Really Sure ?",
-                        Callback = function()
-                        	delfile(config)
-                        end
-                    },
-                    {
-                        Title = "Cancel",
+			local config = self.Folder .. "/settings/" .. name .. ".json"
+			if not isfile(config) then print(config); return end
+			self.Library.Window:Dialog({
+				Title = "Delete Config",
+				Content = "You'r about to delete this config",
+				Buttons = {
+					{
+						Title = "Are You Really Sure ?",
+						Callback = function()
+							delfile(config)
+							SaveManager.Options.SaveManager_ConfigList:SetValue(nil)
+							SaveManager.Options.SaveManager_ConfigList:SetValues(self:RefreshConfigList())
+						end
+					},
+					{
+						Title = "Cancel",
 						Callback = function()
 							
 						end
-                    }
-                }
-			end
-        })
+					}
+				}
+			})
+		end})
 
         section:AddButton({Title = "Load config", Callback = function()
 			local name = SaveManager.Options.SaveManager_ConfigList.Value
