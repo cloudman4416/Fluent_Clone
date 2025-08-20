@@ -56,9 +56,6 @@ function Element:New(Idx, Config)
 
 	if Input.Finished then
 		AddSignal(Box.FocusLost, function(enter)
-			if not enter then
-				return
-			end
 			Input:SetValue(Box.Text)
 		end)
 	else
